@@ -1,0 +1,41 @@
+<configuration scan="true">
+    <appender-ref ref="CONSOLE" />
+    <turboFilter class="br.car.rental_company_abrao_lemos.config.FilterLogs">
+        <OnMismatch>DENY</OnMismatch>                
+    </turboFilter>                   
+    <!-- Appender de Console -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>%d{yyyy-MM-dd HH:mm:ss}</timestamp>
+                <context/>
+                <mdc/>
+                <arguments/>
+                <pattern>
+                    <pattern>
+                        {
+                        "message": "#tryJson{%msg}",
+                        "logger_name": "%logger{36}",
+                        "level": "%level",
+                        "ex": "%ex{short}"
+                        }
+                    </pattern>
+                    <omitEmptyFields>true</omitEmptyFields>
+                </pattern>
+                <stackTrace/>
+            </providers>
+        </encoder>
+    </appender>
+
+    <!-- Configuração dos loggers específicos -->
+    <logger name="org.springframework" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="org.hibernate.SQL" level="ERROR"/>
+    <logger name="org.hibernate.type" level="TRACE"/>
+
+    <!-- Configuração do Root Logger -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
