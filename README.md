@@ -43,5 +43,9 @@ Abaixo está um diagrama que ilustra a arquitetura do Spring Boot e foi retirado
 
 Para expandir e enriquecer o sistema, está planejado o desenvolvimento futuro de:
 
+
+- **Alteração de fluxo de banco:** Hoje é utilizado banco local, porem vai ser realizado uma melhoria para utilização do RDS da AWS para armazenamento.
+- **Implementação de SQS:** Substituição do controlador atual por filas Amazon SQS para melhorar o controle e a segurança do fluxo de dados, garantindo maior eficiência e confiabilidade.
 - **Fluxo Completo de Locadora:** Implementação de diversos microsserviços para cobrir todas as funcionalidades necessárias para uma locadora completa.
 - **Batch:** Adição de processos em lote para otimizar e gerenciar operações em grande escala, completando o ecossistema da Locadora Abrão Lemos.
+- **Implementação de GraphQL:** Transformação do fluxo de consultas para utilizar o GraphQL, proporcionando uma forma mais eficiente e flexível de consultar dados diretamente nos bancos de dados.
