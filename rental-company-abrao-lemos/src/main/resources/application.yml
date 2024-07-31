@@ -1,11 +1,6 @@
   server:
     port: 9090
 
-    database:
-        url: jdbc:mysql://${DATABASE_HOST}:3306/controleCar?useSSL=false&serverTimezone=UTC
-        user: ${DB_USER}
-        password: ${DB_PASS}   
-  
   jpa:
     hibernate:
       ddl-auto: update

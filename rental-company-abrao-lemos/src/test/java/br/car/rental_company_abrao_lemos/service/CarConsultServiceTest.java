@@ -1,13 +1,10 @@
 package br.car.rental_company_abrao_lemos.service;
 
 import br.car.rental_company_abrao_lemos.TestRequest;
-import br.car.rental_company_abrao_lemos.converter.CarConverter;
 import br.car.rental_company_abrao_lemos.dto.ConsultRequest;
 import br.car.rental_company_abrao_lemos.entities.CarEntity;
 import br.car.rental_company_abrao_lemos.exception.ValidationRequestException;
-import br.car.rental_company_abrao_lemos.repository.CarRepository;
 import java.io.IOException;
-import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
