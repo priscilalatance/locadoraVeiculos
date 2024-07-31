@@ -5,13 +5,13 @@
 Este projeto é uma solução para uma locadora de veículos, desenvolvido com o objetivo de implementar um sistema de gerenciamento eficiente para veículos alugados. A aplicação inclui as seguintes funcionalidades principais:
 
 - **CRUD de Veículos:** Permite a criação, leitura, atualização e exclusão de registros de veículos.
-- **Inativação de Veículos:** Implementa a funcionalidade de desativar veículos, para que não estejam mais disponíveis para locação.
+- **Inativação de Veículos:** Implementa a funcionalidade de desativar veículos, assim mantem seu cadastro no banco porem inativo para locações.
 
 O projeto visa consolidar os conhecimentos adquiridos ao longo de dois anos de desenvolvimento e aplica conceitos de engenharia de software.
 
 ## Tecnologias Utilizadas
 
-Neste projeto, utilizamos as seguintes tecnologias:
+Neste projeto, é utilizado as seguintes tecnologias:
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Java" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
@@ -44,4 +44,4 @@ Abaixo está um diagrama que ilustra a arquitetura do Spring Boot e foi retirado
 Para expandir e enriquecer o sistema, está planejado o desenvolvimento futuro de:
 
 - **Fluxo Completo de Locadora:** Implementação de diversos microsserviços para cobrir todas as funcionalidades necessárias para uma locadora completa.
-- **Batch Processing:** Adição de processos em lote para otimizar e gerenciar operações em grande escala, completando o ecossistema da Locadora Abrão Lemos.
+- **Batch:** Adição de processos em lote para otimizar e gerenciar operações em grande escala, completando o ecossistema da Locadora Abrão Lemos.
